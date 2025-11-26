@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -186,6 +187,110 @@
             font-size: 24px;
             color: white;
         }
+
+        .video-section {
+            background: #f8f8f8;
+            padding: 60px 20px;
+            margin-top: 40px;
+        }
+
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .video-container h2 {
+            font-size: 32px;
+            color: #00A99D;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .testimonials-section {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .testimonials-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonials-container h2 {
+            font-size: 32px;
+            color: #00A99D;
+            margin-bottom: 40px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .testimonial-card {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+            border: 3px solid #00A99D;
+        }
+
+        .testimonial-info h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .testimonial-info p {
+            font-size: 14px;
+            color: #00A99D;
+            font-weight: 500;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #555;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -240,15 +345,61 @@
         </section>
     </div>
 
+    <section class="video-section">
+        <div class="video-container">
+            <h2>How Partnership for Internships Works</h2>
+            <div class="video-wrapper">
+                <!-- Replace YOUR_VIDEO_ID with your actual YouTube video ID -->
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="testimonials-container">
+            <h2>Success Stories from Our Students</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop" alt="Victoire" class="testimonial-photo">
+                        <div class="testimonial-info">
+                            <h3>Victoire</h3>
+                            <p>Found internship through Partnership for Internships</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Partnership for Internships made my search so much easier! I found the perfect internship that aligned with my studies in communication. The platform was easy to use, and the companies were all high quality. I highly recommend this service to all student members."
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop" alt="Lea" class="testimonial-photo">
+                        <div class="testimonial-info">
+                            <h3>Lea</h3>
+                            <p>Found internship through Partnership for Internships</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-text">
+                        "Thanks to Partnership for Internships, I secured an amazing internship in my field. The search filters helped me find exactly what I was looking for, and the partner companies were professional and supportive. This service is a game-changer for students!"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="cta-section">
         <h2>Start your internship search today!</h2>
         <p>Browse hundreds of internship positions tailored to your field. Use our search filters to find your dream internship opportunity.</p>
-        <a href="https://alexyamnytsky.github.io/search/" class="btn-primary" onclick="alert('This will take you to the internship search page'); return false;">Internship Search →</a>
+        <a href="#" class="btn-primary" onclick="alert('This will take you to the internship search page'); return false;">Internship Search →</a>
     </section>
 
     <footer class="footer">
         <p>&copy; 2024 Akava Erityisalat. Working life on human terms.</p>
     </footer>
 </body>
-
 </html>
